@@ -16,7 +16,7 @@ const Navbar = () => {
     <>
     <NavbarContainer>
         <LogoContainer onClick={() => navigate("/")}>
-         <LogoNavbar  src='/images/portfolio.png'></LogoNavbar>
+         <LogoNavbar  src='images/portfolio.png'></LogoNavbar>
         </LogoContainer>
         <NavbarItemsContainer>
                 <NavbarItemLink href='/images/cv Agustin Fernandez.pdf' download >Curriculum Vitae</NavbarItemLink>
