@@ -2,14 +2,18 @@ import styled from "styled-components";
 
 
 export const HomeContainer = styled.div`
-    width: 100vw;
-    height : 100vh;
+    width: 100%;
+    height : 100%;
     display: flex;
     font-family: var(--font);
     flex-direction: column;
     background-image : url("images/teclado.jpg");
     background-size : cover;
     justify-content: space-around;
+    border: 2px dashed red;
+    @media(max-width : 320px){
+       width: 320px;
+    }
 `;
 export const HeroButtonsContainer = styled.button`
     background-color: var(--bg-button);
@@ -41,6 +45,14 @@ export const HomeDescription = styled.div`
     width: 500px;
     display: flex;
     flex-direction:column;
+    @media(min-width :320px){
+        border: 2px dashed red;
+        width: 80%;
+    }
+    @media(min-width : 768px){
+        width: 500px;
+    
+    }
 
 `;
 export const HomeTitle = styled.h3`

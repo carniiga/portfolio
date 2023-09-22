@@ -10,12 +10,14 @@ export const ProyectCardContainer = styled.div`
     gap: 10px;
     backdrop-filter: blur(10px);
     color: white;
+  
     
 `;
 export const ProyectImg = styled.img`
     margin: 0 auto;
     width: 150px;
     height: 150px;
+
 `;
 export const ProyectTitle = styled.h3`
      text-align: center;

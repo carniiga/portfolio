@@ -7,4 +7,11 @@ export const TecnologiasContainer = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-`;
+    @media(min-width:320px){
+    flex-direction: column;
+    height: fit-content;
+    }
+    @media(min-width : 768px){
+        flex-direction: row;
+    }
+`;      

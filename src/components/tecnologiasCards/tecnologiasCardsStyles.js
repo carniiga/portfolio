@@ -6,6 +6,9 @@ export const TecnologiasCardContainer = styled.div`
     display: flex;
     flex-direction:column;
     align-items: center;
+    @media(min-width : 320px){
+        height: 200px;
+    }
 
 `;
 export const TecnologiasImg = styled.img`

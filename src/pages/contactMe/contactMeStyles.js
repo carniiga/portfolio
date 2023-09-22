@@ -17,6 +17,7 @@ export const ContactMeIconsContainer = styled.div`
     margin: 20px auto;
     align-items: center;
     display: flex;
+   
     
 `;
 
@@ -27,6 +28,10 @@ export const IconContainer = styled.div`
     justify-content: space-around;
     width: 20%;
     margin: 0 auto ;
+    @media(min-width:320px){
+        width: 200px;
+        margin-top: 50px;
+    }
  
 `;
 export const WspiconContainer = styled.div`

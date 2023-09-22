@@ -3,12 +3,15 @@ import { ButtonGlobal } from "../../styles/GlobalStyles";
 
 
 export const AllProyectsWrapper = styled.div`
-
     height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media(min-width:320px){
+        height: 100%;
+       
+    }
 `;
 export const AllProyectsContainer = styled.div`
     width: 100%;
@@ -18,6 +21,17 @@ export const AllProyectsContainer = styled.div`
     gap: 100px;
     flex-wrap: wrap;
     height: 550px;
+    @media(min-width:320px){
+        border:2px dashed blue;
+        margin-top: 50px;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    @media(min-width:1024px){
+        flex-direction: row;
+    }
 `;
 export const ButtonPageContainer = styled.div`
     margin-top: 20px;

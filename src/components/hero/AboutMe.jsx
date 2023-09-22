@@ -10,7 +10,7 @@ import {
   AboutMeTitle,
   ParagraphColor,
 } from "./aboutMeStyles";
-import { ButtonGlobal } from "../../styles/GlobalStyles";
+
 
 const AboutMe = () => {
   return (

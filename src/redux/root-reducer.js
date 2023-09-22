@@ -1,8 +1,7 @@
 import { combineReducers } from "redux";
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import toggleReducer from "./toggleSwichReducer/toggleSwichReducer";
-
+import { toggleMenuReducer } from "./toggleMenuReducer/toggleMenuReducer";
 const persistConfig = {
     key : "root",
     storage,
@@ -11,6 +10,6 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
-    toggleReducer : toggleReducer,
+    toggleMenuReducer,
 })
 export default persistReducer(persistConfig , rootReducer)

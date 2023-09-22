@@ -1,14 +1,15 @@
 import React   from 'react'
-
-
-import {  LogoContainer, LogoNavbar, NavbarContainer, NavbarItemLi, NavbarItemLink, NavbarItemsContainer } from './navbarStyles'
+import {  BurgerMenuIcon, LogoContainer, LogoNavbar, NavbarContainer, NavbarItemLi, NavbarItemLink, NavbarItemsContainer } from './navbarStyles'
 import { useLocation, useNavigate} from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import * as menuActions from "../../redux/toggleMenuReducer/toggleMenuActions"
 
 
 const Navbar = () => {
   const navigate = useNavigate()
   const location = useLocation()
-
+  const dispatch = useDispatch()
+  const hidden = useSelector(state => state.toggleMenuReducer.menuIsHidden)
 
 
 
@@ -18,7 +19,8 @@ const Navbar = () => {
         <LogoContainer onClick={() => navigate("/")}>
          <LogoNavbar  src='/images/Portfolio.png'></LogoNavbar>
         </LogoContainer>
-        <NavbarItemsContainer>
+        <BurgerMenuIcon onClick={() => dispatch(menuActions.toggleMenu())}/>
+        <NavbarItemsContainer hidden = {hidden}>
                 <NavbarItemLink href='/images/cv Agustin Fernandez.pdf' download >Curriculum Vitae</NavbarItemLink>
                 {location.pathname === "/contactMe" ? (null) : (<NavbarItemLi to="/contactMe" target = "_blank">Contacto</NavbarItemLi>)}
         </NavbarItemsContainer>

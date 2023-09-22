@@ -1,15 +1,22 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
+import {GiHamburgerMenu} from "react-icons/gi"
 export const NavbarContainer = styled.div`
     backdrop-filter: blur(5px);
     height: 150px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     font-family: var(--font);
     justify-content: space-between;
     color: white;
+    @media(min-width :320px){
+        height: 200px;
+    }
+    @media(min-width : 1024px){
+        height: 150px;
+    }
+    
 `;
 export const LogoContainer = styled.div`
     width: 100px;
@@ -34,6 +41,23 @@ export const NavbarItemsContainer = styled.ul`
     justify-content: space-around;
     text-align: center;
     align-items: center;
+    @media(min-width :320px){
+        flex-direction: column;
+        width: 180px;
+        height: 250px;
+        margin : 120px 0 0 0;
+        display: ${props => props.hidden ? "none" : "flex"};
+        background-color: black;
+    }
+    @media(min-width :1024px){
+        flex-direction: row;
+        width: 300px;
+        display: flex;
+        margin: 0;
+        height: 100px;
+        background: none;
+    }
+  
 `;
 
 
@@ -58,3 +82,26 @@ export const NavbarItemLi= styled(Link)`
     cursor: pointer;
    
 `
+
+export const BurgerMenuIcon = styled(GiHamburgerMenu)`
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    @media(min-width : 320px){
+        display: flex;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    @media(min-width : 425px){
+        margin-left: 70px;
+    }
+    @media(min-width : 768px){
+        margin-left: 400px;
+    }
+    @media(min-width : 1024px){
+        display: none;
+    }
+   
+   
+`;
