@@ -22,7 +22,6 @@ export const AllProyectsContainer = styled.div`
     flex-wrap: wrap;
     height: 550px;
     @media(min-width:320px){
-        border:2px dashed blue;
         margin-top: 50px;
         height: fit-content;
         flex-direction: column;

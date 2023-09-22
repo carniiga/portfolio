@@ -10,7 +10,6 @@ export const HomeContainer = styled.div`
     background-image : url("images/teclado.jpg");
     background-size : cover;
     justify-content: space-around;
-    border: 2px dashed red;
     @media(max-width : 320px){
        width: 320px;
     }
@@ -46,7 +45,6 @@ export const HomeDescription = styled.div`
     display: flex;
     flex-direction:column;
     @media(min-width :320px){
-        border: 2px dashed red;
         width: 80%;
     }
     @media(min-width : 768px){
