@@ -9,7 +9,6 @@ export const PortFolioContainer = styled.div`
     background-size:cover;
     justify-content: space-around;
     @media(min-width:1024px){
-        border: 2px dashed red;
         height: 100%;
     }
 `;

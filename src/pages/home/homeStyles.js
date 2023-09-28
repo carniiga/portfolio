@@ -14,8 +14,7 @@ export const HomeContainer = styled.div`
        width: 320px;
     }
     @media(min-width:1024px){
-        border: 2px dashed red;
-        height: 100vh;
+        height: fit-content;
     }
    
 `;

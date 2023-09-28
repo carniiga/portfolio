@@ -10,4 +10,7 @@ export const ProyectosContainer = styled.div`
     background-size:cover;
     background-image: url("/images/teclado.jpg");
     justify-content: space-around;
+    @media(min-width:1024px){
+        height: 100%;
+    }
 `;
