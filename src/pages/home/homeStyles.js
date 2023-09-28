@@ -13,6 +13,9 @@ export const HomeContainer = styled.div`
     @media(max-width : 320px){
        width: 320px;
     }
+    @media(min-width:2560px){
+        height: 100vh;
+    }
 `;
 export const HeroButtonsContainer = styled.button`
     background-color: var(--bg-button);
