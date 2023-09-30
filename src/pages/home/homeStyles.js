@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
     width: 100%;
-    height : 100%;
+    height : 100vh;
     display: flex;
     font-family: var(--font);
     flex-direction: column;
@@ -14,7 +14,7 @@ export const HomeContainer = styled.div`
        width: 320px;
     }
     @media(min-width:1024px){
-        height: fit-content;
+        height: 100vh;
     }
    
 `;
