@@ -14,10 +14,10 @@ const Home = () => {
       <HomeTitle>Gracias por tu visita</HomeTitle>
       <HomeDescription>
         <HomeParagraph>
-        Si llegaste hasta aca, es por que habras visto mi postulacion y te agradezco mucho.<br></br>
+        Si llegaste hasta aca, es por que habrás visto mi postulacion y te agradezco mucho.<br></br>
        <br></br>
-        Si queres ver mis proyectos y experiencias te invito a que visites mi portfolio 👇<br></br>
-        Donde hay necesidades nacen las ideas!.
+        Si querés ver mis proyectos y experiencias te invito a que visites mi portfolio 👇<br></br>
+      
         </HomeParagraph>
       </HomeDescription>
       <HeroButtonsContainer onClick={() => navigate("/portfolio")}>
