@@ -1,5 +1,14 @@
 export const proyectos = [
     {
+        title : "Crud fernandez-market",
+        description : "Un crud enfocado en el admin de la aplicación.Incluye login de usuario y restablecimiento de password mediante email.",
+        link : "https://github.com/carniiga/fernandez-market-backend",
+        date : "09/23 - 11/23",
+        stack : "backend"
+
+    },
+
+    {
     title : "Fernandez-Viajes",
     description: "Una aplicacion full-stack hecho con mongoDB El crud esta enfocado en el administrador que pueda cargar productos, editarlos y borrarlos. incluye auth para usuarios.",
     link : "https://github.com/carniiga/fernandez-viajes" ,
