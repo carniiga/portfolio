@@ -1,4 +1,12 @@
 export const proyectos = [
+
+    {
+        title : "crud todo-list",
+        description : "Todo-list full stack , utilizando nodejs  express y postgreSQL. tiene register y login de usuario para realizar las tareas.",
+        link : "https://github.com/carniiga/todo-full-stack",
+        date : "04/12 - 28/12",
+        stack : "full-stack"
+    },
     {
         title : "Crud fernandez-market",
         description : "Un crud enfocado en el admin de la aplicación.Incluye login de usuario y restablecimiento de password mediante email.",
