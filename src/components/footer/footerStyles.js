@@ -11,7 +11,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterParagraph = styled.p`
-    color: gray;
+    color: white;
     font-family:  'Great Vibes', cursive;
     font-size: 60px;
 `;
