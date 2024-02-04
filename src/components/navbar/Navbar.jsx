@@ -21,7 +21,7 @@ const Navbar = () => {
         </LogoContainer>
         <BurgerMenuIcon onClick={() => dispatch(menuActions.toggleMenu())}/>
         <NavbarItemsContainer hidden = {hidden}>
-                <NavbarItemLink href='/images/cv_Agustin_Fernandez.pdf' download >Curriculum Vitae</NavbarItemLink>
+                <NavbarItemLink href='/public/images/cv_Agustin_Fernandez.pdf' download >Curriculum Vitae</NavbarItemLink>
                 {location.pathname === "/contactMe" ? (null) : (<NavbarItemLi to="/contactMe" target = "_blank">Contacto</NavbarItemLi>)}
         </NavbarItemsContainer>
         
